@@ -11,12 +11,12 @@
 ## Table of Contents
 1. [Project Overview](#project-overview)  
 2. [Features](#features)  
-3. [Installation & Setup](#installation--setup)  
-4. [Usage](#usage)  
-5. [Prompting Techniques](#prompting-techniques)  
-6. [Repository Structure](#repository-structure)  
-7. [License](#license)  
-8. [Contributing](#contributing)  
+3. [Installation & Setup](#-installation--setup)  
+4. [Usage](#-usage)  
+5. [Prompting Techniques](#-prompting-techniques)  
+6. [Repository Structure](#-repository-structure)  
+7. [License](#-license)  
+8. [Contributing](#-contributing)  
 
 ---
 
@@ -45,9 +45,127 @@ This project was originally built as part of an **Intro to LLM** lab assignment.
 
 ---
 
-## Installation & Setup
+## 🚀 Installation & Setup
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/codegenbot.git
-   cd codegenbot
+### 1. Clone the GitHub repository
+
+```bash
+git clone https://github.com/your-username/codegenbot.git
+cd codegenbot
+```
+
+### 2. Create a virtual environment (recommended)
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Set your Google API key
+
+#### Option A: Export it in your shell
+
+```bash
+export GOOGLE_API_KEY="YOUR_API_KEY_HERE"
+```
+
+#### Option B: The app will prompt you for your API key if it is not already set.
+
+### 5. Run the Streamlit app
+
+```bash
+streamlit run streamlit_app.py
+```
+
+Open [http://localhost:8501](http://localhost:8501) in your browser to use CodeGenBot.
+
+---
+
+## 💡 Usage
+
+1. **Enter your coding request:**  
+   For example: “How do I write a function to reverse a list in Python?”
+
+2. **Choose a prompting technique:**  
+   Select one (e.g., Zero Shot, Few Shot, Chain-of-Thought, etc.) from the dropdown.
+
+3. **Generate Redrafts:**  
+   Click “Generate Redrafts” to view 2–3 rephrasings of your request with the selected technique.
+
+4. **Pick a Redraft:**  
+   Choose your preferred redrafted prompt using radio buttons.
+
+5. **Generate Final Code:**  
+   Click “Generate Final Code” to receive a JSON response containing:
+   - `"code"`: displayed in a Python code block.
+   - `"explanation"`: shown in plain text.
+
+6. **Follow-up Conversation:**  
+   Use this section to ask further questions or make refinements. CodeGenBot uses the context to generate responses.
+
+7. **Dark/Light Mode:**  
+   Use the “🌙 Dark Mode” checkbox at the top-right to toggle themes.
+
+---
+
+## 🧠 Prompting Techniques
+
+Each technique adds a unique flavor to the model's response:
+
+- **Zero Shot:** No examples provided—the model answers directly.
+- **Few Shot:** A few examples guide the response format/style.
+- **Chain-of-Thought:** The model "thinks aloud" step by step.
+- **Least-to-Most:** Breaks the problem into smaller sub-problems.
+- **Self-Consistency:** Generates multiple solutions and picks the most consistent one.
+- **Reflective:** Generates an initial solution, then refines it.
+- **Backtracking:** Corrects its initial answer by backtracking reasoning.
+- **Verbalizer:** Structures the answer by explicitly verbalizing the reasoning.
+
+---
+
+## 📁 Repository Structure
+
+```
+codegenbot/
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── streamlit_app.py
+└── notebooks/
+    └── llm_lab_1.ipynb
+```
+
+- `streamlit_app.py`: Main Streamlit app with multi-step prompt flow.
+- `requirements.txt`: Lists required Python packages.
+- `LICENSE`: MIT License (or your chosen license).
+- `notebooks/llm_lab_1.ipynb`: Original lab notebook (optional).
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. You are free to modify and distribute it as long as you include the original license.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how:
+
+1. Fork this repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and test them.
+4. Submit a Pull Request with a clear explanation.
+
+For questions or issues, feel free to open an issue in the repository.
+
+---
+
+**Happy Coding! 💻✨**
