@@ -138,6 +138,8 @@ codegenbot/
 ├── requirements.txt
 ├── .gitignore
 ├── streamlit_app.py         # Main entry point for the Streamlit app
+└── notebooks/
+    └── llm_lab_1.ipynb
 └── src/
     ├── config.py            # LLM configuration, base prompts, and technique instructions/descriptions
     ├── prompts.py           # Functions for prompt redrafting and final code generation
