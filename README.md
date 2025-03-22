@@ -137,15 +137,20 @@ codegenbot/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── streamlit_app.py
-└── notebooks/
-    └── llm_lab_1.ipynb
+├── streamlit_app.py         # Main entry point for the Streamlit app
+└── src/
+    ├── config.py            # LLM configuration, base prompts, and technique instructions/descriptions
+    ├── prompts.py           # Functions for prompt redrafting and final code generation
+    ├── utils.py             # Utility functions (e.g., conversation history management)
+    ├── theme.py             # Functions to inject custom CSS for dark/light mode
+    └── conversation.py      # Functions for handling follow-up conversation responses
+
 ```
 
 - `streamlit_app.py`: Main Streamlit app with multi-step prompt flow.
 - `requirements.txt`: Lists required Python packages.
-- `LICENSE`: MIT License (or your chosen license).
-- `notebooks/llm_lab_1.ipynb`: Original lab notebook (optional).
+- `LICENSE`: MIT License.
+- `notebooks/llm_lab_1.ipynb`: Original lab notebook.
 
 ---
 
