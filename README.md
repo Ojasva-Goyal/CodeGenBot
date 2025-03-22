@@ -174,7 +174,7 @@ Contributions are welcome! Here's how:
 ---
 
 ## Contact
-Created by `Ojasva Goyal` - feel free to contact me at ojasvagoyal9@gmail.com for any questions or feedback.
+Created with ❤️ by `Ojasva Goyal` - feel free to contact me at ojasvagoyal9@gmail.com for any questions or feedback.
 
 ---
 
