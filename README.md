@@ -169,7 +169,10 @@ Contributions are welcome! Here's how:
 3. Make your changes and test them.
 4. Submit a Pull Request with a clear explanation.
 
-For questions or issues, feel free to open an issue in the repository.
+---
+
+## Contact
+Created by `Ojasva Goyal` - feel free to contact me at ojasvagoyal9@gmail.com for any questions or feedback.
 
 ---
 
